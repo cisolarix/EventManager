@@ -1,0 +1,19 @@
+Thanks <%= name %>
+
+
+  
+Thanks for coming to our conference.  We couldn't have done it without you!
+
+
+
+  
+
+    Political activism is at the heart of any democracy and your voice needs to be heard.
+    Please consider reaching out to your following representatives:
+  
+
+
+
+<% legislators.each do |legislator| %>
+  <%= "#{legislator.first_name} #{legislator.last_name}" %> <%= "#{legislator.website}" %>
+<% end %>
